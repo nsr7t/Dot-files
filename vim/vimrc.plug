@@ -1,0 +1,23 @@
+call plug#begin('~/.vim/plug')
+
+" Git wrapper
+Plug 'tpope/vim-fugitive'
+
+" Indent guides
+Plug 'preservim/vim-indent-guides'
+
+" Sidebar (NERDTree)
+Plug 'preservim/nerdtree'
+
+" File/folder icons
+Plug 'ryanoasis/vim-devicons'
+
+" Theme
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
+" Status line
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
+
