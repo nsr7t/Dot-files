@@ -1,0 +1,162 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](surface0)\
+$os\
+$username\
+[](bg:charcoal fg:surface0)\
+$directory\
+[](fg:charcoal bg:dark_gray)\
+$git_branch\
+$git_status\
+[](fg:dark_gray bg:mid_gray)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:mid_gray bg:gray_blue)\
+$docker_context\
+[](fg:gray_blue bg:mid_gray)\
+[ ](fg:mid_gray)\
+$line_break$character"""
+
+palette = 'blackish_dark'
+
+[palettes.blackish_dark]
+surface0 = "#1a1a1a"
+surface1 = "#222222"
+surface2 = "#2a2a2a"
+text = "#b0b0b0"
+charcoal = "#2e2e2e"
+gray_blue = "#3a3a3a"
+dark_gray = "#444444"
+mid_gray = "#555555"
+mantle = "#121212"
+base = "#0e0e0e"
+
+[os]
+disabled = false
+style = "bg:surface0 fg:text"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = ""
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[username]
+show_always = true
+style_user = "bg:surface0 fg:text"
+style_root = "bg:surface0 fg:text"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:text bg:charcoal"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:mid_gray"
+format = '[[ $symbol $branch ](fg:base bg:dark_gray)]($style)'
+
+[git_status]
+style = "bg:mid_gray"
+format = '[[($all_status$ahead_behind )](fg:base bg:dark_gray)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:mid_gray"
+format = '[[ $symbol( $version) ](fg:base bg:mid_gray)]($style)'
+
+[c]
+symbol = " "
+style = "bg:mid_gray"
+format = '[[ $symbol( $version) ](fg:base bg:mid_gray)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:mid_gray"
+format = '[[ $symbol( $version) ](fg:base bg:mid_gray)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:mid_gray"
+format = '[[ $symbol( $version) ](fg:base bg:mid_gray)]($style)'
+
+[php]
+symbol = ""
+style = "bg:mid_gray"
+format = '[[ $symbol( $version) ](fg:base bg:mid_gray)]($style)'
+
+[java]
+symbol = " "
+style = "bg:mid_gray"
+format = '[[ $symbol( $version) ](fg:base bg:mid_gray)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:mid_gray"
+format = '[[ $symbol( $version) ](fg:base bg:mid_gray)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:mid_gray"
+format = '[[ $symbol( $version) ](fg:base bg:mid_gray)]($style)'
+
+[python]
+symbol = ""
+style = "bg:mid_gray"
+format = '[[ $symbol( $version) ](fg:base bg:mid_gray)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:gray_blue"
+format = '[[ $symbol( $context) ](fg:text bg:gray_blue)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:mid_gray"
+format = '[[  $time ](fg:text bg:mid_gray)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[](bold fg:gray_blue)'
+error_symbol = '[](bold fg:#777777)'
+vimcmd_symbol = '[](bold fg:gray_blue)'
+vimcmd_replace_one_symbol = '[](bold fg:mid_gray)'
+vimcmd_replace_symbol = '[](bold fg:mid_gray)'
+vimcmd_visual_symbol = '[](bold fg:text)'
+

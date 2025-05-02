@@ -28,8 +28,8 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
 " === AIRLINE SETTINGS ===
-let g:airline_theme='catppuccin_mocha' " You can switch to 'onedark' or other themes if you prefer
-let g:airline_font=1 " You can switch to 'onedark' or other themes if you prefer
+let g:airline_theme='catppuccin_mocha' 
+let g:airline_font=1 
 
-" Airline extensions: tabline, branch, file info
+" Airline extensions: tabline
 let g:airline#extensions#tabline#enabled = 1
