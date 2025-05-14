@@ -16,8 +16,8 @@
 	],
 	"display": {
 		"color": {
-			"title": "#6C547B",    // Key color
-			"keys": "#4B5C7B",      // Title color
+			"title": "#6C547B", 
+			"keys": "#4B5C7B",
 			"output": "#B6AFA3"
 		},
 		"percent": {
@@ -28,7 +28,7 @@
 	},
 	"logo": {
 		"type": "auto",
-		"source": "./cat.png",
+		"source": "~/.config/fastfetch/cat.png",
 		"width":20,
 		"padding": {
 			"top": 0,
