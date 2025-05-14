@@ -13,7 +13,7 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
 " Theme
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'ayu-theme/ayu-vim', { 'as': 'ayu-vim' }
 
 " Status line
 Plug 'vim-airline/vim-airline'
